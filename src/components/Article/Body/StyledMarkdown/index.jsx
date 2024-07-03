@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 16.7px;
+    font-size: 16px;
     color: ${props => props.theme.colors.text};
     line-height: 1.73;
-    overflow: hidden;
+    overflow: visible;
   }
 
   & h1:first-child,
@@ -20,16 +20,15 @@ const StyledMarkdown = styled.div`
   & > ol,
   & table,
   & blockquote,
-  & pre,
   & img,
   & .katex-display {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   & p {
     overflow-x: scroll;
-    word-break: break-all;
+    word-break: break-word;
 
     ::-webkit-scrollbar {
       display: none;
@@ -43,32 +42,42 @@ const StyledMarkdown = styled.div`
   & h6 {
     margin: 11.2px 0 4.8px 0;
     font-weight: 700;
+    overflow: visible;
   }
 
   & h2 {
-    margin-top: 100px;
-    margin-bottom: 24px;
-    font-size: 28px;
+    margin-top: 50px;
+    font-size: 24px;
   }
 
   & h3 {
-    margin-top: 70px;
-    margin-bottom: 20px;
-    font-size: 22.4px;
+    margin-top: 30px;
+    font-size: 20px;
   }
 
-  & h4 {
-    margin-top: 70px;
-    margin-bottom: 15px;
-    font-size: 17.6px;
-  }
-
-  & h5 {
+  & h4,
+  & h5,
+  & h6 {
+    margin-top: 30px;
     font-size: 16px;
   }
 
-  & h6 {
-    font-size: 14.4px;
+  & .heading-anchor {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    & .heading-anchor {
+      display: none;
+    }
+  }
+
+  & .heading-anchor svg {
+    fill: ${props => props.theme.colors.text};
   }
 
   & strong {
@@ -132,7 +141,6 @@ const StyledMarkdown = styled.div`
   & table code.language-text {
     position: relative;
     top: -1px;
-    margin-right: 3px;
     padding: 3px 5px 3px 5px;
     font-size: 13px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
@@ -148,6 +156,11 @@ const StyledMarkdown = styled.div`
 
   & tr:nth-child(even) code.language-text {
     background-color: ${props => props.theme.colors.inlineCodeBackgroundDarker};
+  }
+
+  & > p + ul,
+  & > p + ol {
+    margin-top: -8px;
   }
 
   & ul,
@@ -172,11 +185,15 @@ const StyledMarkdown = styled.div`
   }
 
   & li {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
 
   & li p {
-    margin: 8px 0;
+    margin-bottom: 7px;
+  }
+
+  & ul li::marker {
+    font-size: 12px;
   }
 
   & pre {
@@ -190,11 +207,6 @@ const StyledMarkdown = styled.div`
     ::-webkit-scrollbar-thumb {
       background: ${props => props.theme.colors.scrollHandle};
     }
-  }
-
-  & code[class*="language-"],
-  & pre[class*="language-"] {
-    font-size: 13.5px;
   }
 
   & img {
@@ -222,9 +234,26 @@ const StyledMarkdown = styled.div`
     color: ${props => props.theme.colors.text};
   }
 
-  & a:hover {
+  & a:hover:not(.heading-anchor) {
     background-color: ${props => props.theme.colors.text};
     color: ${props => props.theme.colors.hoveredLinkText};
+  }
+
+  & sup {
+    margin-left: 2px;
+    font-size: 13px;
+    vertical-align: super;
+  }
+
+  & sup > a {
+    padding: 0 1px;
+  }
+
+  & .footnotes {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid ${props => props.theme.colors.border};
+    font-size: 14px;
   }
 `
 
