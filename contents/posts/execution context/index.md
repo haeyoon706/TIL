@@ -1,16 +1,14 @@
 ---
-title: "execution context"
-description: "execution context란 무엇인가"
+title: "Execution Context(실행 컨텍스트)란"
+description: "Execution Context(실행 컨텍스트)의 종류와 구성요소"
 date: 2024-07-02
-update: 2024-07-02
+update: 2024-07-03
 tags:
   - javascript
-series: "javascript"
+series: "Execution Context"
 ---
 
-# execution context (실행 컨텍스트)
-
-## "실행 가능한 자바스크립트의 코드 블록 "
+## 실행 가능한 자바스크립트의 코드 블록
 
 > 실행 컨텍스트란 실행할 코드에 제공할 환경 정보들을 모아놓은 객체  
 > 여기서 환경이란 전역공간 혹은 함수 내부의 환경을 의미  
@@ -18,6 +16,7 @@ series: "javascript"
 > 자바스크립트 엔진에서 코드가 실행 된다는 것은 실행 컨텍스트 내부에서 코드가 실행되고 있다는 의미
 
 <br/>
+## 컨텍스트 종류
 
 자바스크립트의 코드는 아래 세 종류가 있음
 
@@ -32,7 +31,6 @@ series: "javascript"
 함수가 호출될 때마다 함수 실행 컨텍스트(FEC)가 생성되어  
 자바스크립트 엔진의 Call Stack이라는 곳에 쌓이게 됨
 
-<br/>
 
 ### 예시
 
