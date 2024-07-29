@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of haeyoon]]></title><description><![CDATA[Hello :) I'm Haeyoon]]></description><link>https://haeyoon706.github.io/TIL</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Jul 2024 06:26:38 GMT</lastBuildDate><item><title><![CDATA[call / bind / apply]]></title><description><![CDATA[call 첫번째 인자인 obj가 this를 대체함
-this는 기본적으로 window를 가리킴
-하지만 call, apply, bind의 첫번째 인자에서 this를 바꿀 수 있음 apply arguments…]]></description><link>https://haeyoon706.github.io/TIL/call apply bind/</link><guid isPermaLink="false">https://haeyoon706.github.io/TIL/call apply bind/</guid><pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;call&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of haeyoon]]></title><description><![CDATA[Hello :) I'm Haeyoon]]></description><link>https://haeyoon706.github.io/TIL</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 29 Jul 2024 01:30:22 GMT</lastBuildDate><item><title><![CDATA[call / bind / apply]]></title><description><![CDATA[call 첫번째 인자인 obj가 this를 대체함 this는 기본적으로 window를 가리킴 하지만 call, apply, bind의 첫번째 인자에서 this를 바꿀 수 있음   apply arguments…]]></description><link>https://haeyoon706.github.io/TIL/call apply bind/</link><guid isPermaLink="false">https://haeyoon706.github.io/TIL/call apply bind/</guid><pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;call&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; obj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;발&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;example&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -9,19 +7,19 @@ this는 기본적으로 window를 가리킴
 
 &lt;span class=&quot;token function&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;닭&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 닭undefined&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;닭&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 닭발&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;첫번째 인자인 obj가 this를 대체함
-this는 기본적으로 window를 가리킴
-하지만 call, apply, bind의 첫번째 인자에서 this를 바꿀 수 있음&lt;/p&gt;
+&lt;p&gt;첫번째 인자인 obj가 this를 대체함&lt;br&gt;
+this는 기본적으로 window를 가리킴&lt;br&gt;
+하지만 call, apply, bind의 첫번째 인자에서 this를 바꿀 수 있음  &lt;/p&gt;
 &lt;h2&gt;apply&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arguments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [1, 2, 3]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;arguments는 기본적으로 유사배열이므로 배열의 프로토타입인 slice 메소드를 사용할 수 없음
-하지만 apply()를 사용하여 arguments를 바인딩 하면 배열처럼 사용 가능&lt;/p&gt;
+&lt;p&gt;arguments는 기본적으로 유사배열이므로 배열의 프로토타입인 slice 메소드를 사용할 수 없음&lt;br&gt;
+하지만 apply()를 사용하여 arguments를 바인딩 하면 배열처럼 사용 가능  &lt;/p&gt;
 &lt;h2&gt;bind&lt;/h2&gt;
-&lt;p&gt;bind는 call, apply와 마찬가지로 this를 바꾸지만 호출은 하지 않음
-bind()()로 하면 호출까지 가능 !&lt;/p&gt;
+&lt;p&gt;bind는 call, apply와 마찬가지로 this를 바꾸지만 호출은 하지 않음&lt;br&gt;
+bind()()로 하면 호출까지 가능 !  &lt;/p&gt;
 &lt;h2&gt;참고&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Call-Bind-Apply&quot;&gt;https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Call-Bind-Apply&lt;/a&gt;&lt;/li&gt;
