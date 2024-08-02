@@ -1,8 +1,8 @@
 ---
 title: "Closure (2)"
 description: "Closure 고급"
-date: 2024-08-01
-update: 2024-08-01
+date: 2024-08-02
+update: 2024-08-02
 tags:
   - javascript
 series: "Execution Context"
