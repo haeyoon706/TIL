@@ -10,7 +10,7 @@ series: "Execution Context"
 
 ## closure의 사용
 
-### 데이터 은닉(캠슐화)
+### 1. 데이터 은닉(캠슐화)
 자바스크립트에서는 제공하지 않는 private method 기능 구현 가능  
 private method : 같은 클래스 내부의 특정 메서드에서만 해당 메서드 호출 가능
 
@@ -50,7 +50,7 @@ console.log(counter1.value()); // 1.
 console.log(counter2.value()); // 0.
 ```
 
-### 상태 유지
+### 2. 상태 유지
 closure의 사전적 의미는 '폐쇠'  
 특정 데이터를 스코프 안에 가두어 둔 채로 계속 사용 가능  
 -> 메모리 측면에서 손해
