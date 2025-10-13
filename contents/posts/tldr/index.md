@@ -1,0 +1,17 @@
+---
+title: "자바스크립트 한 줄 꿀팁"
+description: "모던 자바스크립트 Deep Dive에서 읽은 한 줄 꿀팁"
+date: 2025-10-13
+update: 2025-10-13
+tags:
+  - javascript
+series: "모던 자바스크립트 Deep Dive"
+---
+
+## 모던 자바스크립트 Deep Dive
+
+- hasOwnProperty 메서드는 인수로 전달받은 프로퍼티 키가 **객체 고유의 프로퍼티 키인 경우에만 true를 반환**하고 상속받은 프로토타입의 프로퍼티 키인 경우에는 false를 반환한다
+
+## 참고
+
+- 모던 자바스크립트 Deep Dive
