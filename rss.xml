@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of haeyoon]]></title><description><![CDATA[Hello :) I'm Haeyoon]]></description><link>https://haeyoon706.github.io/TIL</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Oct 2025 05:52:42 GMT</lastBuildDate><item><title><![CDATA[Next.js의 ISR]]></title><description><![CDATA[들어가며 React와 Next.js를 사용한 여러 프로젝트를 진행하면서 CSR, SSR, SSG 렌더링 기법은 익숙하지만
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of haeyoon]]></title><description><![CDATA[Hello :) I'm Haeyoon]]></description><link>https://haeyoon706.github.io/TIL</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 13 Oct 2025 04:49:19 GMT</lastBuildDate><item><title><![CDATA[자바스크립트 한 줄 꿀팁]]></title><description><![CDATA[모던 자바스크립트 Deep Dive hasOwnProperty 메서드는 인수로 전달받은 프로퍼티 키가 객체 고유의 프로퍼티 키인 경우에만 true를 반환하고 상속받은 프로토타입의 프로퍼티 키인 경우에는 false…]]></description><link>https://haeyoon706.github.io/TIL/tldr/</link><guid isPermaLink="false">https://haeyoon706.github.io/TIL/tldr/</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;모던 자바스크립트 Deep Dive&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;hasOwnProperty 메서드는 인수로 전달받은 프로퍼티 키가 &lt;strong&gt;객체 고유의 프로퍼티 키인 경우에만 true를 반환&lt;/strong&gt;하고 상속받은 프로토타입의 프로퍼티 키인 경우에는 false를 반환한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;참고&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;모던 자바스크립트 Deep Dive&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Next.js의 ISR]]></title><description><![CDATA[들어가며 React와 Next.js를 사용한 여러 프로젝트를 진행하면서 CSR, SSR, SSG 렌더링 기법은 익숙하지만
 ISR 기법은 사용해보지 않아서 여러 아티클과 예제를 보며 포스팅을 써보겄읍니다. ISR(Incremental Static…]]></description><link>https://haeyoon706.github.io/TIL/isr/</link><guid isPermaLink="false">https://haeyoon706.github.io/TIL/isr/</guid><pubDate>Wed, 08 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;들어가며&lt;/h2&gt;
 &lt;p&gt;React와 Next.js를 사용한 여러 프로젝트를 진행하면서 CSR, SSR, SSG 렌더링 기법은 익숙하지만
 ISR 기법은 사용해보지 않아서 여러 아티클과 예제를 보며 포스팅을 써보겄읍니다.&lt;/p&gt;
